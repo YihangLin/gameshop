@@ -5,7 +5,7 @@
 logs
 **/*.backup.*
 **/*.back.*
-**/.env
+functions/.env
 
 
 node_modules
