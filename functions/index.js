@@ -6,22 +6,6 @@ require('dotenv').config();
 
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY);
 
-// console.log('env', process.env.DB_HOST);
-
-// const getTotal = async (id) => {
-//   //get total amount from firestore
-//   const dataRef = admin.firestore().collection('stripe').doc(id);
-
-//   const doc = await dataRef.get();
-
-//   if (!doc.exists) {
-//     console.log('No such document!');
-//   } else {
-//     console.log('GETTOTAL: ', doc.data().total);
-//     return (parseFloat(doc.data().total));
-//   }
-// }
-
 exports.paymentFunc = functions.https.onCall(async(data, context) => {
   const { stripe_id, id } = data;
   const dataRef = admin.firestore().collection('stripe').doc(stripe_id);
