@@ -43,20 +43,30 @@ const carouselSteps = [
 
 const useStyles = makeStyles((theme) => ({
   img: {
-    margin: 10,
-    maxHeight: '100%',
-    maxWidth: '100%',
-    overflow: 'hidden',
-    cursor: 'pointer',
+    width: '50%',
+    marginRight: 10,
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      marginRight: 0,
+    }
   },
   description: {
-    margin: 'auto',
-    width: '30%',
+    width: '50%',
+    marginLeft: 10,
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      marginLeft: 0,
+      marginTop: 15,
+    }
   },
   root:{
-    marginTop: 5,
+    padding: 5,
+    marginTop: 10,
     display:'flex',
     justifyContent:'space-between',
+    [theme.breakpoints.down('md')]: {
+      flexDirection: 'column',
+    }
   },
   
 }));

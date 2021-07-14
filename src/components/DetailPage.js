@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
   chips: {
     marginRight: 5,
     marginBottom: 5,
+    backgroundColor: '#2196f3',
   },
   show: {
     display: 'flex',
@@ -97,7 +98,7 @@ const Detail = () => {
               </Grid>
               <Grid item xs={12}>
                 {tags && tags.map((tag, index) => (
-                  <Chip className={classes.chips} size='small' label={tag} key={index}/>
+                  <Chip className={classes.chips} size='small' color='primary' label={tag} key={index}/>
                 ))}
               </Grid>
               <Grid item xs={12}>

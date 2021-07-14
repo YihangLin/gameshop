@@ -75,7 +75,7 @@ const Login = () => {
 
   return (
     <Grid container spacing={0} direction='column' alignItems='center' justify='center' className={classes.formArea}>
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={9} sm={6} lg={3}>
         <form onSubmit={handleSubmit}>
           <h1 className={classes.textColor}>Login</h1>
           <div className={classes.fields}>

@@ -96,7 +96,7 @@ const Signup = () => {
 
   return (
     <Grid container spacing={0} direction='row' alignItems='center' justify='center' className={classes.formArea}>
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={9} sm={6} lg={3}>
         <form onSubmit={handleSubmit}>
           <h1 className={classes.textColor}>Sign Up</h1>
           <div className={classes.fields}>
