@@ -1,5 +1,7 @@
 # GameShop - online game shopping website
 
+[View it online!](https://gameshop-e5678.web.app/)
+
 A simple website created with ReactJS, MaterialUI, firebase and Stripe.
 ![homepage](/src/images/homepage.png)
 
